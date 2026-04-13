@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advogado Previdenciario em Foz do Iguacu | Luan Barbosa - OAB/PR 101.570</title>
+  <meta name="description" content="Advogado previdenciario em Foz do Iguacu. Especialista em aposentadoria, BPC, auxilio-doenca, pensao por morte e revisao de beneficios INSS. Consulta gratuita.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ========== RESET & BASE ========== */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background-color: #0a1628;
+      color: #e8edf3;
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* ========== GRID PATTERN BACKGROUND ========== */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image:
+        linear-gradient(rgba(46, 203, 113, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(46, 203, 113, 0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ========== TYPOGRAPHY ========== */
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: clamp(1.6rem, 4vw, 2.5rem);
+      letter-spacing: -0.01em;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    p {
+      color: #8899aa;
+      font-size: 1.05rem;
+    }
+
+    /* ========== LAYOUT ========== */
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    section {
+      padding: 5rem 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #2ECB71;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    .section-subtitle {
+      color: #8899aa;
+      font-size: 1.1rem;
+      max-width: 640px;
+      margin-bottom: 3rem;
+    }
+
+    /* ========== BUTTONS ========== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary {
+      background: #2ECB71;
+      color: #0a1628;
+    }
+
+    .btn-primary:hover {
+      background: #27b062;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(46, 203, 113, 0.3);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: #e8edf3;
+      border: 1px solid rgba(136, 153, 170, 0.3);
+    }
+
+    .btn-secondary:hover {
+      border-color: #2ECB71;
+      color: #2ECB71;
+    }
+
+    .btn-large {
+      padding: 1.15rem 2.5rem;
+      font-size: 1.1rem;
+      border-radius: 10px;
+    }
+
+    /* ========== HERO ========== */
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding: 6rem 0 4rem;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -20%;
+      right: -10%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(46, 203, 113, 0.08) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(46, 203, 113, 0.2), transparent);
+    }
+
+    .hero-content {
+      max-width: 720px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 1rem;
+      background: rgba(46, 203, 113, 0.1);
+      border: 1px solid rgba(46, 203, 113, 0.2);
+      border-radius: 100px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #2ECB71;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-badge .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #2ECB71;
+      animation: pulse-dot 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .hero h1 {
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h1 .accent {
+      color: #2ECB71;
+    }
+
+    .hero-subtitle {
+      font-size: 1.15rem;
+      color: #8899aa;
+      margin-bottom: 2.5rem;
+      max-width: 600px;
+      line-height: 1.7;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .hero-phone {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #8899aa;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .hero-phone:hover {
+      color: #e8edf3;
+    }
+
+    /* ========== STATS BAR ========== */
+    .stats-bar {
+      padding: 3rem 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #0f1f35;
+      border: 1px solid rgba(46, 203, 113, 0.1);
+      border-radius: 12px;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+
+    .stat-item:hover {
+      border-color: rgba(46, 203, 113, 0.3);
+      transform: translateY(-2px);
+    }
+
+    .stat-number {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      font-weight: 700;
+      color: #2ECB71;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+      color: #8899aa;
+      font-weight: 400;
+    }
+
+    /* ========== WHEN TO SEEK SECTION ========== */
+    .when-section {
+      padding-top: 5rem;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+
+    .card {
+      background: #0f1f35;
+      border: 1px solid rgba(136, 153, 170, 0.1);
+      border-radius: 12px;
+      padding: 2rem 1.5rem;
+      transition: all 0.35s ease;
+    }
+
+    .card:hover {
+      border-color: rgba(46, 203, 113, 0.3);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-icon {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .card h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #e8edf3;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: #8899aa;
+    }
+
+    /* ========== BENEFITS SECTION ========== */
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .benefit-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1.5rem;
+      background: #0f1f35;
+      border: 1px solid rgba(136, 153, 170, 0.08);
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .benefit-item:hover {
+      border-color: rgba(46, 203, 113, 0.2);
+    }
+
+    .benefit-icon {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(46, 203, 113, 0.1);
+      border-radius: 8px;
+      color: #2ECB71;
+    }
+
+    .benefit-icon svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .benefit-text h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #e8edf3;
+      margin-bottom: 0.25rem;
+    }
+
+    .benefit-text p {
+      font-size: 0.85rem;
+      color: #8899aa;
+    }
+
+    /* ========== TIMELINE / STEPPER ========== */
+    .timeline {
+      position: relative;
+      padding-left: 3rem;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 15px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, #2ECB71, rgba(46, 203, 113, 0.1));
+    }
+
+    .timeline-step {
+      position: relative;
+      padding-bottom: 2.5rem;
+    }
+
+    .timeline-step:last-child {
+      padding-bottom: 0;
+    }
+
+    .timeline-step::before {
+      content: attr(data-step);
+      position: absolute;
+      left: -3rem;
+      top: 0;
+      width: 32px;
+      height: 32px;
+      background: #0f1f35;
+      border: 2px solid #2ECB71;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #2ECB71;
+      z-index: 2;
+      line-height: 28px;
+      text-align: center;
+    }
+
+    .timeline-step h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #e8edf3;
+      margin-bottom: 0.35rem;
+    }
+
+    .timeline-step p {
+      font-size: 0.95rem;
+      color: #8899aa;
+    }
+
+    /* ========== FAQ ACCORDION ========== */
+    .faq-list {
+      max-width: 800px;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid rgba(136, 153, 170, 0.1);
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 1.5rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      cursor: pointer;
+      text-align: left;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: #e8edf3;
+      transition: color 0.3s;
+    }
+
+    .faq-question:hover {
+      color: #2ECB71;
+    }
+
+    .faq-question:focus {
+      outline: 2px solid rgba(46, 203, 113, 0.5);
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
+    .faq-chevron {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      transition: transform 0.3s ease;
+      color: #8899aa;
+    }
+
+    .faq-item.active .faq-chevron {
+      transform: rotate(180deg);
+      color: #2ECB71;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 300px;
+      padding-bottom: 1.5rem;
+    }
+
+    .faq-answer p {
+      font-size: 0.95rem;
+      color: #8899aa;
+      line-height: 1.7;
+    }
+
+    /* ========== FOOTER CTA ========== */
+    .footer-cta {
+      text-align: center;
+      padding: 5rem 0;
+      position: relative;
+    }
+
+    .footer-cta::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(46, 203, 113, 0.2), transparent);
+    }
+
+    .footer-cta-box {
+      background: linear-gradient(135deg, #0f1f35 0%, #132a47 100%);
+      border: 1px solid rgba(46, 203, 113, 0.15);
+      border-radius: 20px;
+      padding: 4rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .footer-cta-box::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(46, 203, 113, 0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .footer-cta h2 {
+      margin-bottom: 0.75rem;
+      position: relative;
+    }
+
+    .footer-cta .section-subtitle {
+      margin: 0 auto 2rem;
+      text-align: center;
+    }
+
+    .footer-cta .btn {
+      position: relative;
+    }
+
+    .footer-info {
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: #8899aa;
+      position: relative;
+    }
+
+    .footer-info span {
+      margin: 0 0.5rem;
+      opacity: 0.5;
+    }
+
+    /* ========== ACTUAL FOOTER ========== */
+    footer {
+      padding: 2rem 0;
+      text-align: center;
+      border-top: 1px solid rgba(136, 153, 170, 0.08);
+      position: relative;
+      z-index: 1;
+    }
+
+    footer p {
+      font-size: 0.8rem;
+      color: #556677;
+    }
+
+    /* ========== FLOATING WHATSAPP ========== */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .whatsapp-tooltip {
+      background: #0f1f35;
+      color: #e8edf3;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      border: 1px solid rgba(136, 153, 170, 0.15);
+      white-space: nowrap;
+      opacity: 0;
+      transform: translateX(10px);
+      transition: all 0.3s ease;
+      pointer-events: none;
+    }
+
+    .whatsapp-float:hover .whatsapp-tooltip {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .whatsapp-btn {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #25D366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+      transition: transform 0.3s, box-shadow 0.3s;
+      animation: pulse-wa 2.5s ease-in-out infinite;
+      text-decoration: none;
+    }
+
+    .whatsapp-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 30px rgba(37, 211, 102, 0.5);
+    }
+
+    .whatsapp-btn svg {
+      width: 30px;
+      height: 30px;
+      fill: white;
+    }
+
+    @keyframes pulse-wa {
+      0%, 100% {
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+      }
+      50% {
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4), 0 0 0 12px rgba(37, 211, 102, 0.08);
+      }
+    }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 1024px) {
+      .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      section {
+        padding: 3.5rem 0;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 5rem 0 3rem;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+      }
+
+      .stat-item {
+        padding: 1.25rem 0.75rem;
+      }
+
+      .stat-number {
+        font-size: 1.75rem;
+      }
+
+      .stat-label {
+        font-size: 0.8rem;
+      }
+
+      .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .benefits-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .footer-cta-box {
+        padding: 3rem 1.5rem;
+      }
+
+      .footer-info span {
+        display: none;
+      }
+
+      .footer-info {
+        line-height: 2;
+      }
+    }
+
+    @media (max-width: 480px) {
+      html {
+        font-size: 15px;
+      }
+
+      .container {
+        padding: 0 1rem;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+      }
+
+      .stat-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        text-align: left;
+        padding: 1.25rem 1.5rem;
+      }
+
+      .stat-number {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+      }
+
+      .whatsapp-tooltip {
+        display: none;
+      }
+
+      .whatsapp-float {
+        bottom: 1.25rem;
+        right: 1.25rem;
+      }
+
+      .whatsapp-btn {
+        width: 54px;
+        height: 54px;
+      }
+
+      .whatsapp-btn svg {
+        width: 26px;
+        height: 26px;
+      }
+    }
+
+    /* ========== ANIMATIONS ========== */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* stagger children */
+    .stagger-children .fade-up:nth-child(1) { transition-delay: 0s; }
+    .stagger-children .fade-up:nth-child(2) { transition-delay: 0.08s; }
+    .stagger-children .fade-up:nth-child(3) { transition-delay: 0.16s; }
+    .stagger-children .fade-up:nth-child(4) { transition-delay: 0.24s; }
+    .stagger-children .fade-up:nth-child(5) { transition-delay: 0.32s; }
+    .stagger-children .fade-up:nth-child(6) { transition-delay: 0.4s; }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          OAB/PR 101.570 &mdash; Foz do Igua&ccedil;u
+        </div>
+        <h1>Advogado Previdenci&aacute;rio em <span class="accent">Foz do Igua&ccedil;u</span></h1>
+        <p class="hero-subtitle">
+          Especialista em aposentadoria, BPC, aux&iacute;lio-doen&ccedil;a, pens&atilde;o por morte e revis&atilde;o de benef&iacute;cios INSS. Mais de 6.000 casos resolvidos.
+        </p>
+        <div class="hero-actions">
+          <a href="https://wa.me/5545988428644?text=Ol%C3%A1%20Luan%2C%20preciso%20de%20ajuda%20com%20meu%20caso%20no%20INSS" class="btn btn-primary btn-large" aria-label="Consulta gratuita via WhatsApp" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            Consulta Gratuita via WhatsApp
+          </a>
+          <a href="tel:+5545988428644" class="hero-phone" aria-label="Ligar para (45) 98842-8644">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Ligue agora: (45) 98842-8644
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== STATS BAR ==================== -->
+  <section class="stats-bar" id="stats" aria-label="Estatisticas do escritorio">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item fade-up">
+          <div class="stat-number" data-target="6000" data-suffix="+">0</div>
+          <div class="stat-label">Processos resolvidos</div>
+        </div>
+        <div class="stat-item fade-up">
+          <div class="stat-number" data-target="12" data-suffix="">0</div>
+          <div class="stat-label">OABs em todo o Brasil</div>
+        </div>
+        <div class="stat-item fade-up">
+          <div class="stat-number" data-target="15" data-suffix="">0</div>
+          <div class="stat-label">Profissionais na equipe</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== WHEN TO SEEK ==================== -->
+  <section class="when-section" id="quando-procurar">
+    <div class="container">
+      <span class="section-label">Situa&ccedil;&otilde;es comuns</span>
+      <h2>Quando procurar um advogado previdenci&aacute;rio?</h2>
+      <p class="section-subtitle">Se voc&ecirc; se identifica com alguma dessas situa&ccedil;&otilde;es, podemos ajudar.</p>
+
+      <div class="cards-grid stagger-children">
+        <div class="card fade-up">
+          <span class="card-icon" aria-hidden="true">&#x1F6AB;</span>
+          <h3>INSS negou seu pedido</h3>
+          <p>Aposentadoria, BPC, aux&iacute;lio-doen&ccedil;a negados sem motivo justo</p>
+        </div>
+        <div class="card fade-up">
+          <span class="card-icon" aria-hidden="true">&#x23F3;</span>
+          <h3>Esperando mais de 45 dias</h3>
+          <p>Mora de an&aacute;lise do INSS configura direito &agrave; via judicial</p>
+        </div>
+        <div class="card fade-up">
+          <span class="card-icon" aria-hidden="true">&#x1F4B0;</span>
+          <h3>Recebendo menos do que devia</h3>
+          <p>Revis&atilde;o da vida toda, teto, buraco negro</p>
+        </div>
+        <div class="card fade-up">
+          <span class="card-icon" aria-hidden="true">&#x1F4CB;</span>
+          <h3>N&atilde;o sabe se tem direito</h3>
+          <p>Planejamento previdenci&aacute;rio gratuito</p>
+        </div>
+        <div class="card fade-up">
+          <span class="card-icon" aria-hidden="true">&#x1F494;</span>
+          <h3>Perdeu um familiar</h3>
+          <p>Pens&atilde;o por morte com an&aacute;lise r&aacute;pida</p>
+        </div>
+        <div class="card fade-up">
+          <span class="card-icon" aria-hidden="true">&#x267F;</span>
+          <h3>BPC cortado ou negado</h3>
+          <p>Idoso, defici&ecirc;ncia, TEA/autismo</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BENEFITS ==================== -->
+  <section id="beneficios">
+    <div class="container">
+      <span class="section-label">&Aacute;reas de atua&ccedil;&atilde;o</span>
+      <h2>Benef&iacute;cios que atuo</h2>
+      <p class="section-subtitle">Cobertura completa em direito previdenci&aacute;rio com atendimento especializado para cada tipo de benef&iacute;cio.</p>
+
+      <div class="benefits-grid stagger-children">
+        <div class="benefit-item fade-up">
+          <div class="benefit-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="benefit-text">
+            <h3>Aposentadoria por idade, tempo e especial</h3>
+            <p>An&aacute;lise completa do tempo de contribui&ccedil;&atilde;o e melhor regra de transi&ccedil;&atilde;o</p>
+          </div>
+        </div>
+        <div class="benefit-item fade-up">
+          <div class="benefit-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <div class="benefit-text">
+            <h3>Aux&iacute;lio-doen&ccedil;a e aposentadoria por invalidez</h3>
+            <p>Per&iacute;cia m&eacute;dica judicial independente do INSS</p>
+          </div>
+        </div>
+        <div class="benefit-item fade-up">
+          <div class="benefit-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="benefit-text">
+            <h3>BPC/LOAS (idoso, defici&ecirc;ncia, TEA)</h3>
+            <p>Benef&iacute;cio assistencial para quem mais precisa de prote&ccedil;&atilde;o social</p>
+          </div>
+        </div>
+        <div class="benefit-item fade-up">
+          <div class="benefit-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <div class="benefit-text">
+            <h3>Pens&atilde;o por morte</h3>
+            <p>Agilidade na concess&atilde;o para dependentes do segurado falecido</p>
+          </div>
+        </div>
+        <div class="benefit-item fade-up">
+          <div class="benefit-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+          </div>
+          <div class="benefit-text">
+            <h3>Revis&atilde;o de benef&iacute;cios</h3>
+            <p>Vida toda, teto, buraco negro, art. 29 &mdash; recupere o que &eacute; seu por direito</p>
+          </div>
+        </div>
+        <div class="benefit-item fade-up">
+          <div class="benefit-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="benefit-text">
+            <h3>Aposentadoria especial (Itaipu, trabalho insalubre)</h3>
+            <p>Exposi&ccedil;&atilde;o a agentes nocivos comprovada por PPP e LTCAT</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== HOW IT WORKS ==================== -->
+  <section id="como-funciona">
+    <div class="container">
+      <span class="section-label">Passo a passo</span>
+      <h2>Como funciona o atendimento</h2>
+      <p class="section-subtitle">Do primeiro contato ao recebimento do benef&iacute;cio, acompanhamos voc&ecirc; em cada etapa.</p>
+
+      <div class="timeline stagger-children">
+        <div class="timeline-step fade-up" data-step="1">
+          <h3>An&aacute;lise gratuita inicial</h3>
+          <p>Envie documentos pelo WhatsApp, resposta em at&eacute; 24h</p>
+        </div>
+        <div class="timeline-step fade-up" data-step="2">
+          <h3>Reuni&atilde;o de estrat&eacute;gia</h3>
+          <p>Presencial na Av. Pedro Basso ou por videochamada</p>
+        </div>
+        <div class="timeline-step fade-up" data-step="3">
+          <h3>Contrata&ccedil;&atilde;o clara</h3>
+          <p>Honor&aacute;rios transparentes, maioria pro rata (s&oacute; paga se ganhar)</p>
+        </div>
+        <div class="timeline-step fade-up" data-step="4">
+          <h3>Execu&ccedil;&atilde;o t&eacute;cnica</h3>
+          <p>Recurso ou a&ccedil;&atilde;o judicial, acompanhamento em cada etapa</p>
+        </div>
+        <div class="timeline-step fade-up" data-step="5">
+          <h3>Recebimento do benef&iacute;cio</h3>
+          <p>INSS implanta, atrasados direto na sua conta</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ ==================== -->
+  <section id="faq">
+    <div class="container">
+      <span class="section-label">D&uacute;vidas frequentes</span>
+      <h2>Perguntas e respostas</h2>
+      <p class="section-subtitle">Tudo que voc&ecirc; precisa saber antes de buscar seus direitos.</p>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Quanto cobra um advogado previdenci&aacute;rio em Foz do Igua&ccedil;u?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>Seguimos a Tabela OAB-PR. Na maioria dos casos, voc&ecirc; s&oacute; paga se ganhar (honor&aacute;rios de &ecirc;xito sobre os atrasados). Consulta inicial sempre gratuita.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Preciso ir pessoalmente ao escrit&oacute;rio?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>N&atilde;o obrigatoriamente. Casos simples s&atilde;o 100% por WhatsApp. Atendemos presencialmente na Av. Pedro Basso, Foz do Igua&ccedil;u, com hor&aacute;rio marcado.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Quanto tempo demora para conseguir aposentadoria na justi&ccedil;a?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>Na Justi&ccedil;a Federal de Foz do Igua&ccedil;u: aposentadoria 8-18 meses, BPC 6-12 meses, tutelas urgentes em 30-90 dias.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>O INSS negou meu aux&iacute;lio-doen&ccedil;a. Adianta ir &agrave; Justi&ccedil;a?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>Sim. A per&iacute;cia judicial &eacute; independente do INSS. Com laudos m&eacute;dicos consistentes, revers&atilde;o acontece em mais de 60% dos casos.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Posso entrar com aposentadoria especial trabalhando em Itaipu?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>Depende da exposi&ccedil;&atilde;o a agentes nocivos. Trabalhadores de opera&ccedil;&atilde;o, manuten&ccedil;&atilde;o e subesta&ccedil;&otilde;es frequentemente t&ecirc;m direito. Analiso seu PPP gratuitamente.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>BPC autismo: meu filho foi negado, o que fazer?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>A&ccedil;&atilde;o judicial imediata. A Lei 12.764/2012 garante que pessoas com TEA s&atilde;o consideradas PCD para todos os efeitos, incluindo BPC.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Tenho tempo de contribui&ccedil;&atilde;o antigo n&atilde;o reconhecido. Consigo reverter?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>Sim, com documentos originais e em alguns casos prova testemunhal. Justifica&ccedil;&atilde;o Administrativa ou a&ccedil;&atilde;o judicial de averba&ccedil;&atilde;o.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Qual o diferencial do Luan Barbosa?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>12 OABs (atuo em todo o Brasil), equipe de 15 profissionais com tecnologia pr&oacute;pria para acompanhar prazos, e comunica&ccedil;&atilde;o direta por WhatsApp &mdash; sem estagi&aacute;rios no meio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER CTA ==================== -->
+  <section class="footer-cta" id="contato">
+    <div class="container">
+      <div class="footer-cta-box fade-up">
+        <h2>N&atilde;o deixe o INSS decidir seu futuro</h2>
+        <p class="section-subtitle">Consulta gratuita e resposta em at&eacute; 24 horas</p>
+        <a href="https://wa.me/5545988428644?text=Ol%C3%A1%20Luan%2C%20preciso%20de%20ajuda%20com%20meu%20caso%20no%20INSS" class="btn btn-primary btn-large" target="_blank" rel="noopener" aria-label="Falar com Luan no WhatsApp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          Falar com Luan no WhatsApp
+        </a>
+        <p class="footer-info">
+          Av. Pedro Basso, Foz do Igua&ccedil;u/PR
+          <span>|</span>
+          OAB/PR 101.570
+          <span>|</span>
+          Atendemos toda a regi&atilde;o da tr&iacute;plice fronteira
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Luan Barbosa Advocacia. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ==================== FLOATING WHATSAPP ==================== -->
+  <div class="whatsapp-float">
+    <span class="whatsapp-tooltip">Fale conosco</span>
+    <a href="https://wa.me/5545988428644" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Fale conosco pelo WhatsApp">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <script>
+    (function() {
+      'use strict';
+
+      // ===== IntersectionObserver for fade-up animations =====
+      var fadeElements = document.querySelectorAll('.fade-up');
+
+      if ('IntersectionObserver' in window) {
+        var fadeObserver = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              fadeObserver.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.15,
+          rootMargin: '0px 0px -40px 0px'
+        });
+
+        fadeElements.forEach(function(el) {
+          fadeObserver.observe(el);
+        });
+      } else {
+        // Fallback: show everything
+        fadeElements.forEach(function(el) {
+          el.classList.add('visible');
+        });
+      }
+
+      // ===== Animated stat counters =====
+      var statNumbers = document.querySelectorAll('.stat-number[data-target]');
+      var statsAnimated = false;
+
+      function animateCounter(el) {
+        var target = parseInt(el.getAttribute('data-target'), 10);
+        var suffix = el.getAttribute('data-suffix') || '';
+        var duration = 2000;
+        var startTime = null;
+
+        function easeOutCubic(t) {
+          return 1 - Math.pow(1 - t, 3);
+        }
+
+        function step(timestamp) {
+          if (!startTime) startTime = timestamp;
+          var progress = Math.min((timestamp - startTime) / duration, 1);
+          var easedProgress = easeOutCubic(progress);
+          var current = Math.floor(easedProgress * target);
+
+          el.textContent = current.toLocaleString('pt-BR') + suffix;
+
+          if (progress < 1) {
+            requestAnimationFrame(step);
+          } else {
+            el.textContent = target.toLocaleString('pt-BR') + suffix;
+          }
+        }
+
+        requestAnimationFrame(step);
+      }
+
+      if ('IntersectionObserver' in window) {
+        var statsSection = document.getElementById('stats');
+        var statsObserver = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting && !statsAnimated) {
+              statsAnimated = true;
+              statNumbers.forEach(function(el) {
+                animateCounter(el);
+              });
+              statsObserver.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.3
+        });
+
+        if (statsSection) {
+          statsObserver.observe(statsSection);
+        }
+      } else {
+        statNumbers.forEach(function(el) {
+          var target = parseInt(el.getAttribute('data-target'), 10);
+          var suffix = el.getAttribute('data-suffix') || '';
+          el.textContent = target.toLocaleString('pt-BR') + suffix;
+        });
+      }
+
+      // ===== FAQ Accordion =====
+      var faqQuestions = document.querySelectorAll('.faq-question');
+
+      faqQuestions.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var item = this.closest('.faq-item');
+          var isActive = item.classList.contains('active');
+          var expanded = !isActive;
+
+          // Close all other items
+          document.querySelectorAll('.faq-item.active').forEach(function(activeItem) {
+            if (activeItem !== item) {
+              activeItem.classList.remove('active');
+              activeItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+            }
+          });
+
+          // Toggle current
+          item.classList.toggle('active');
+          this.setAttribute('aria-expanded', String(expanded));
+        });
+      });
+
+      // ===== Smooth scroll for anchor links =====
+      document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+          var targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          var target = document.querySelector(targetId);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+
+    })();
+  </script>
+</body>
+</html>

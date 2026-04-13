@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advogado de Direito do Consumidor em Foz do Iguaçu | Luan Barbosa Advocacia</title>
+  <meta name="description" content="Advogado especialista em direito do consumidor em Foz do Iguaçu/PR. Negativação indevida, cobrança abusiva, produto defeituoso. Consulta gratuita via WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #0a1628;
+      --card: #0f1f35;
+      --card-hover: #142740;
+      --primary: #2ECB71;
+      --primary-dark: #25a85d;
+      --secondary: #F26B2E;
+      --secondary-dark: #d55a22;
+      --text: #e8edf3;
+      --text-muted: #8899aa;
+      --border: #1a2e48;
+      --border-light: #243a56;
+      --glow-primary: rgba(46, 203, 113, 0.15);
+      --glow-secondary: rgba(242, 107, 46, 0.12);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', Georgia, serif;
+      line-height: 1.2;
+      font-weight: 700;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: var(--primary-dark);
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ========== NAV ========== */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(10, 22, 40, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 0;
+      transition: box-shadow 0.3s;
+    }
+
+    .nav.scrolled {
+      box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+    }
+
+    .nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.02em;
+    }
+
+    .nav-brand span {
+      color: var(--primary);
+    }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--primary);
+      color: #0a1628;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      transition: all 0.25s;
+    }
+
+    .nav-cta:hover {
+      background: var(--primary-dark);
+      color: #0a1628;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 20px var(--glow-primary);
+    }
+
+    /* ========== HERO ========== */
+    .hero {
+      padding: 140px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -200px;
+      right: -200px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, var(--glow-primary) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -100px;
+      left: -150px;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, var(--glow-secondary) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(46, 203, 113, 0.1);
+      border: 1px solid rgba(46, 203, 113, 0.25);
+      color: var(--primary);
+      padding: 6px 16px;
+      border-radius: 100px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 24px;
+    }
+
+    .hero-badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--primary);
+      animation: pulse-dot 2s infinite;
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.5); }
+    }
+
+    .hero-shield {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+
+    .shield-icon {
+      flex-shrink: 0;
+      width: 80px;
+      height: 80px;
+      position: relative;
+    }
+
+    .shield-svg {
+      width: 80px;
+      height: 80px;
+      filter: drop-shadow(0 0 20px rgba(46, 203, 113, 0.3));
+      animation: shield-float 4s ease-in-out infinite;
+    }
+
+    @keyframes shield-float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      color: var(--text);
+      margin-bottom: 20px;
+      letter-spacing: -0.02em;
+      max-width: 700px;
+    }
+
+    .hero h1 .accent {
+      color: var(--primary);
+    }
+
+    .hero-sub {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 620px;
+      margin-bottom: 36px;
+      line-height: 1.8;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--primary);
+      color: #0a1628;
+      padding: 16px 32px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      transition: all 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      color: #0a1628;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px var(--glow-primary);
+    }
+
+    .btn-primary svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .hero-secondary-text {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    /* ========== STATS ========== */
+    .stats {
+      padding: 40px 0 60px;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .stat-card {
+      text-align: center;
+      padding: 32px 20px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      transition: all 0.3s;
+    }
+
+    .stat-card:hover {
+      border-color: var(--border-light);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    }
+
+    .stat-number {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 4px;
+    }
+
+    .stat-label {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* ========== SECTION COMMON ========== */
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--secondary);
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      color: var(--text);
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .section-subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin-bottom: 48px;
+      line-height: 1.7;
+    }
+
+    /* ========== PROBLEMS GRID ========== */
+    .problems-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .problem-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      transition: all 0.35s;
+      cursor: default;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .problem-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      opacity: 0;
+      transition: opacity 0.35s;
+    }
+
+    .problem-card:hover {
+      border-color: var(--border-light);
+      background: var(--card-hover);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+    }
+
+    .problem-card:hover::before {
+      opacity: 1;
+    }
+
+    .problem-icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .problem-title {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .problem-desc {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    .problem-solution {
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.4s ease;
+    }
+
+    .problem-card:hover .problem-solution {
+      opacity: 1;
+      max-height: 80px;
+    }
+
+    .problem-solution-text {
+      font-size: 0.85rem;
+      color: var(--primary);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* ========== COMPARISON ========== */
+    .comparison {
+      padding: 80px 0;
+    }
+
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .comparison-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 36px 28px;
+      position: relative;
+    }
+
+    .comparison-card.highlight {
+      border-color: var(--primary);
+      box-shadow: 0 0 40px var(--glow-primary);
+    }
+
+    .comparison-card.highlight::before {
+      content: 'RECOMENDADO';
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--primary);
+      color: #0a1628;
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      padding: 4px 16px;
+      border-radius: 100px;
+    }
+
+    .comparison-title {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .comparison-list {
+      list-style: none;
+    }
+
+    .comparison-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 10px 0;
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .comparison-list li .icon-check {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      margin-top: 2px;
+    }
+
+    .comparison-card:not(.highlight) .icon-check {
+      background: rgba(136, 153, 170, 0.15);
+      color: var(--text-muted);
+    }
+
+    .comparison-card.highlight .icon-check {
+      background: rgba(46, 203, 113, 0.15);
+      color: var(--primary);
+    }
+
+    .comparison-card.highlight .comparison-list li {
+      color: var(--text);
+    }
+
+    .comparison-indicator {
+      margin-top: 20px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .comparison-indicator strong {
+      color: var(--text);
+    }
+
+    .comparison-card.highlight .comparison-indicator strong {
+      color: var(--primary);
+    }
+
+    /* ========== TIMELINE ========== */
+    .timeline {
+      padding: 80px 0;
+    }
+
+    .timeline-steps {
+      position: relative;
+      margin-top: 48px;
+    }
+
+    .timeline-line {
+      position: absolute;
+      left: 24px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(180deg, var(--primary), var(--secondary));
+      opacity: 0.3;
+    }
+
+    .timeline-step {
+      display: flex;
+      gap: 24px;
+      padding-bottom: 40px;
+      position: relative;
+    }
+
+    .timeline-step:last-child {
+      padding-bottom: 0;
+    }
+
+    .timeline-dot {
+      flex-shrink: 0;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--card);
+      border: 2px solid var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: var(--primary);
+      position: relative;
+      z-index: 2;
+    }
+
+    .timeline-content {
+      padding-top: 10px;
+    }
+
+    .timeline-content h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    .timeline-content p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* ========== FAQ ========== */
+    .faq {
+      padding: 80px 0;
+    }
+
+    .faq-list {
+      max-width: 780px;
+      margin: 48px auto 0;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      background: var(--card);
+      transition: border-color 0.3s;
+    }
+
+    .faq-item:hover,
+    .faq-item.active {
+      border-color: var(--border-light);
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      color: var(--text);
+      padding: 20px 24px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      transition: color 0.3s;
+    }
+
+    .faq-question:hover {
+      color: var(--primary);
+    }
+
+    .faq-chevron {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      transition: transform 0.35s ease;
+      color: var(--text-muted);
+    }
+
+    .faq-item.active .faq-chevron {
+      transform: rotate(180deg);
+      color: var(--primary);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 300px;
+    }
+
+    .faq-answer-inner {
+      padding: 0 24px 24px;
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+    }
+
+    /* ========== FOOTER CTA ========== */
+    .footer-cta {
+      padding: 80px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .footer-cta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at center, var(--glow-primary) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .footer-cta .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .footer-cta h2 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      color: var(--text);
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .footer-cta h2 .accent {
+      color: var(--secondary);
+    }
+
+    .footer-cta-sub {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 36px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .footer-cta .btn-primary {
+      font-size: 1.15rem;
+      padding: 18px 40px;
+    }
+
+    /* ========== FOOTER ========== */
+    .footer {
+      padding: 32px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .footer-info {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+
+    .footer-info strong {
+      color: var(--text);
+    }
+
+    /* ========== FLOATING WA ========== */
+    .float-wa {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 999;
+      width: 60px;
+      height: 60px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+      transition: all 0.3s;
+      animation: wa-pulse 3s infinite;
+    }
+
+    .float-wa:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 30px rgba(37, 211, 102, 0.5);
+    }
+
+    .float-wa svg {
+      width: 32px;
+      height: 32px;
+      fill: #fff;
+    }
+
+    @keyframes wa-pulse {
+      0%, 100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); }
+      50% { box-shadow: 0 4px 30px rgba(37, 211, 102, 0.6), 0 0 0 12px rgba(37, 211, 102, 0.08); }
+    }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 768px) {
+      .hero {
+        padding: 120px 0 60px;
+      }
+
+      .hero-shield {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+      }
+
+      .shield-icon {
+        width: 60px;
+        height: 60px;
+      }
+
+      .shield-svg {
+        width: 60px;
+        height: 60px;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .stat-card {
+        padding: 24px 16px;
+      }
+
+      .problems-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .comparison-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .comparison-card.highlight::before {
+        top: -12px;
+      }
+
+      .nav-cta span {
+        display: none;
+      }
+
+      .nav-cta {
+        padding: 10px;
+        border-radius: 50%;
+      }
+
+      .float-wa {
+        bottom: 20px;
+        right: 20px;
+        width: 54px;
+        height: 54px;
+      }
+
+      .float-wa svg {
+        width: 28px;
+        height: 28px;
+      }
+
+      .section {
+        padding: 60px 0;
+      }
+
+      .comparison, .timeline, .faq {
+        padding: 60px 0;
+      }
+
+      .footer-cta {
+        padding: 60px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 1.75rem;
+      }
+
+      .hero-sub {
+        font-size: 1rem;
+      }
+
+      .btn-primary {
+        padding: 14px 24px;
+        font-size: 0.95rem;
+        width: 100%;
+        justify-content: center;
+      }
+
+      .problem-card {
+        padding: 22px;
+      }
+
+      .section-title {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <div class="nav-brand">Luan <span>Barbosa</span></div>
+      <a href="https://wa.me/5545988428644?text=Ol%C3%A1%20Luan,%20preciso%20de%20ajuda%20com%20um%20problema%20de%20consumidor" class="nav-cta" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Direito do Consumidor
+      </div>
+
+      <div class="hero-shield">
+        <div class="shield-icon">
+          <svg class="shield-svg" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M40 6L12 20v20c0 16.57 11.93 32.08 28 36 16.07-3.92 28-19.43 28-36V20L40 6z" fill="rgba(46,203,113,0.08)" stroke="#2ECB71" stroke-width="2.5"/>
+            <path d="M40 6L12 20v20c0 16.57 11.93 32.08 28 36" fill="rgba(46,203,113,0.15)" stroke="none"/>
+            <path d="M33 40l5 5 10-12" stroke="#2ECB71" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+        <div>
+          <h1>Advogado de <span class="accent">Direito do Consumidor</span> em Foz do Iguaçu</h1>
+        </div>
+      </div>
+
+      <p class="hero-sub">
+        Seu direito foi violado? Negativação indevida, cobrança abusiva, produto defeituoso ou serviço não prestado &mdash; lutamos para que você seja indenizado.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="https://wa.me/5545988428644?text=Ol%C3%A1%20Luan,%20preciso%20de%20ajuda%20com%20um%20problema%20de%20consumidor" class="btn-primary" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Consulta Gratuita via WhatsApp
+        </a>
+      </div>
+      <p class="hero-secondary-text">Atendimento presencial e online | Foz do Iguaçu e região</p>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number" data-target="6000" data-suffix="+">0</div>
+          <div class="stat-label">Casos resolvidos</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="12" data-suffix="">0</div>
+          <div class="stat-label">OABs ativas</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="98" data-suffix="%">0</div>
+          <div class="stat-label">Taxa de sucesso em ações consumeristas</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMS -->
+  <section class="section" id="problemas">
+    <div class="container">
+      <span class="section-label">Especialidades</span>
+      <h2 class="section-title">Problemas que resolvemos</h2>
+      <p class="section-subtitle">Cada caso é único, mas os abusos se repetem. Veja se o seu problema está aqui &mdash; e saiba que tem solução.</p>
+
+      <div class="problems-grid">
+        <div class="problem-card">
+          <span class="problem-icon">&#127974;</span>
+          <div class="problem-title">Negativação indevida</div>
+          <p class="problem-desc">Seu nome foi para o SPC/Serasa por dívida que não é sua? Garantimos indenização por danos morais.</p>
+          <div class="problem-solution">
+            <span class="problem-solution-text">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              Indenizações de R$5.000 a R$15.000
+            </span>
+          </div>
+        </div>
+
+        <div class="problem-card">
+          <span class="problem-icon">&#128179;</span>
+          <div class="problem-title">Cobrança abusiva de banco</div>
+          <p class="problem-desc">Empréstimo consignado não autorizado, taxas de juros ilegais, tarifas indevidas.</p>
+          <div class="problem-solution">
+            <span class="problem-solution-text">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              Restituição em dobro + danos morais
+            </span>
+          </div>
+        </div>
+
+        <div class="problem-card">
+          <span class="problem-icon">&#128230;</span>
+          <div class="problem-title">Produto com defeito</div>
+          <p class="problem-desc">Comprou e o produto não funciona? O fornecedor tem até 30 dias para resolver, senão você tem direito à troca ou devolução.</p>
+          <div class="problem-solution">
+            <span class="problem-solution-text">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              Troca, reembolso ou abatimento
+            </span>
+          </div>
+        </div>
+
+        <div class="problem-card">
+          <span class="problem-icon">&#128722;</span>
+          <div class="problem-title">Compras no Paraguai com problemas</div>
+          <p class="problem-desc">Garantia em compras na fronteira, importação legal e direitos do consumidor em Ciudad del Este.</p>
+          <div class="problem-solution">
+            <span class="problem-solution-text">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              Análise caso a caso com especialista
+            </span>
+          </div>
+        </div>
+
+        <div class="problem-card">
+          <span class="problem-icon">&#128241;</span>
+          <div class="problem-title">Operadora de telefonia</div>
+          <p class="problem-desc">Cobranças indevidas, cancelamento de linha, portabilidade negada.</p>
+          <div class="problem-solution">
+            <span class="problem-solution-text">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              Cancelamento + indenização por danos
+            </span>
+          </div>
+        </div>
+
+        <div class="problem-card">
+          <span class="problem-icon">&#127968;</span>
+          <div class="problem-title">Problemas com imobiliária</div>
+          <p class="problem-desc">Atraso na entrega, vícios ocultos, distrato de contrato.</p>
+          <div class="problem-solution">
+            <span class="problem-solution-text">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              Rescisão + devolução integral
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON -->
+  <section class="comparison" id="procon-vs-justica">
+    <div class="container">
+      <span class="section-label">Compare suas opções</span>
+      <h2 class="section-title">Procon ou Justiça: qual caminho?</h2>
+      <p class="section-subtitle">Nem todo problema precisa de ação judicial. Mas quando precisa, a diferença é enorme.</p>
+
+      <div class="comparison-grid">
+        <!-- PROCON -->
+        <div class="comparison-card">
+          <div class="comparison-title">Procon Foz do Iguaçu</div>
+          <ul class="comparison-list">
+            <li><span class="icon-check">&#10003;</span> Gratuito</li>
+            <li><span class="icon-check">&#10003;</span> Sem advogado</li>
+            <li><span class="icon-check">&#10003;</span> Demora 60&ndash;90 dias</li>
+            <li><span class="icon-check">&#8212;</span> Empresa pode ignorar</li>
+            <li><span class="icon-check">&#10007;</span> Sem indenização por danos morais</li>
+          </ul>
+          <div class="comparison-indicator"><strong>Indicado para:</strong> reclamações simples até R$5.000</div>
+        </div>
+
+        <!-- JUSTICA -->
+        <div class="comparison-card highlight">
+          <div class="comparison-title">Ação Judicial com Advogado</div>
+          <ul class="comparison-list">
+            <li><span class="icon-check">&#10003;</span> Honorários acessíveis (muitos casos pro rata)</li>
+            <li><span class="icon-check">&#10003;</span> Decisão com força de lei</li>
+            <li><span class="icon-check">&#10003;</span> Prazo 4&ndash;12 meses</li>
+            <li><span class="icon-check">&#10003;</span> Empresa é obrigada a cumprir</li>
+            <li><span class="icon-check">&#10003;</span> Inclui danos morais (R$3.000 a R$30.000+)</li>
+          </ul>
+          <div class="comparison-indicator"><strong>Indicado para:</strong> negativação, cobrança abusiva, danos significativos</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="timeline" id="como-funciona">
+    <div class="container">
+      <span class="section-label">Passo a passo</span>
+      <h2 class="section-title">Como funciona</h2>
+      <p class="section-subtitle">Do primeiro contato até o dinheiro na sua conta &mdash; transparência total em cada etapa.</p>
+
+      <div class="timeline-steps">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-step">
+          <div class="timeline-dot">1</div>
+          <div class="timeline-content">
+            <h3>Análise gratuita</h3>
+            <p>Envie prints, contratos e comprovantes pelo WhatsApp. Em até 24h você recebe um parecer preliminar sem custo.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="timeline-dot">2</div>
+          <div class="timeline-content">
+            <h3>Estratégia personalizada</h3>
+            <p>Definimos se vai ao Procon, JEC ou Justiça Comum &mdash; o caminho mais rápido e eficaz para o seu caso.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="timeline-dot">3</div>
+          <div class="timeline-content">
+            <h3>Ação com acompanhamento</h3>
+            <p>Protocolo, audiência e acompanhamento em tempo real. Você sabe de cada andamento pelo WhatsApp.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="timeline-dot">4</div>
+          <div class="timeline-content">
+            <h3>Você recebe a indenização</h3>
+            <p>Valores na sua conta + nome limpo nos órgãos de proteção ao crédito. Problema resolvido.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <span class="section-label">Dúvidas frequentes</span>
+      <h2 class="section-title">Perguntas e respostas</h2>
+      <p class="section-subtitle">As dúvidas mais comuns de quem precisa de um advogado de consumidor em Foz do Iguaçu.</p>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Quanto custa um advogado de consumidor em Foz do Iguaçu?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Depende do caso. Ações no JEC (até 40 salários) não exigem advogado, mas ter um aumenta muito a chance de êxito. Honorários a partir de R$800 ou percentual sobre a causa. Consulta inicial é gratuita.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Posso processar uma empresa de fora de Foz do Iguaçu?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Sim! O Código de Defesa do Consumidor permite que você processe no foro do seu domicílio. Ou seja, a ação tramita aqui em Foz, mesmo que a empresa seja de São Paulo.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Quanto tempo demora uma ação de consumidor?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">No JEC de Foz do Iguaçu: 3&ndash;6 meses. Na Justiça Comum: 8&ndash;18 meses. Casos urgentes com tutela antecipada podem ter liminar em 15&ndash;30 dias.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Fui negativado indevidamente. Tenho direito a quê?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Indenização por danos morais (média R$5.000&ndash;R$15.000 em Foz), exclusão imediata do nome dos cadastros e possível indenização por danos materiais se houve prejuízo comprovado.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Comprei no Paraguai e o produto veio com defeito. Tenho direito?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Se a compra foi via loja formal com nota fiscal, sim. O CDC se aplica quando o produto é destinado ao consumidor final brasileiro. Analisamos caso a caso.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Vocês atendem outras cidades além de Foz?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Sim. Atendemos Santa Terezinha de Itaipu, São Miguel do Iguaçu, Medianeira, Matelândia, Céu Azul e toda a região oeste do Paraná. Atendimento remoto para todo o Brasil.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER CTA -->
+  <section class="footer-cta">
+    <div class="container">
+      <h2>Não aceite ser <span class="accent">lesado</span></h2>
+      <p class="footer-cta-sub">Fale agora com um advogado especialista em direito do consumidor</p>
+      <a href="https://wa.me/5545988428644?text=Ol%C3%A1%20Luan,%20preciso%20de%20ajuda%20com%20um%20problema%20de%20consumidor" class="btn-primary" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp: (45) 98842-8644
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-info">
+        <strong>Luan Barbosa Advocacia</strong><br>
+        Av. Pedro Basso, Foz do Iguaçu/PR | <strong>OAB/PR 101.570</strong><br>
+        Atendimento presencial e online para Foz do Iguaçu e região oeste do Paraná
+      </p>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/5545988428644?text=Ol%C3%A1%20Luan,%20preciso%20de%20ajuda%20com%20um%20problema%20de%20consumidor" class="float-wa" target="_blank" rel="noopener" aria-label="Fale no WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script>
+    // Nav scroll effect
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    // Stat counter animation with IntersectionObserver
+    const statNumbers = document.querySelectorAll('.stat-number');
+    let statsAnimated = false;
+
+    function animateCounter(el) {
+      const target = parseInt(el.dataset.target, 10);
+      const suffix = el.dataset.suffix || '';
+      const duration = 2000;
+      const start = performance.now();
+
+      function update(now) {
+        const elapsed = now - start;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const current = Math.round(eased * target);
+
+        el.textContent = current.toLocaleString('pt-BR') + suffix;
+
+        if (progress < 1) {
+          requestAnimationFrame(update);
+        }
+      }
+
+      requestAnimationFrame(update);
+    }
+
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !statsAnimated) {
+          statsAnimated = true;
+          statNumbers.forEach((el) => animateCounter(el));
+          statsObserver.disconnect();
+        }
+      });
+    }, { threshold: 0.3 });
+
+    const statsSection = document.querySelector('.stats');
+    if (statsSection) statsObserver.observe(statsSection);
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const isActive = item.classList.contains('active');
+
+        // Close all
+        document.querySelectorAll('.faq-item').forEach((i) => {
+          i.classList.remove('active');
+          i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+
+        // Toggle current
+        if (!isActive) {
+          item.classList.add('active');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

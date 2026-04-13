@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advogado em Foz do Iguacu | Luan Barbosa Advocacia</title>
+<meta name="description" content="Advogado em Foz do Iguacu com 12 OABs em todo o Brasil. Direito previdenciario, consumidor, civil, familia, trabalhista e empresarial. Consulta gratuita.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+--bg:#0a1628;--bg-card:#0f1f35;--bg-card-hover:#132844;
+--accent:#2ECB71;--accent-dim:rgba(46,203,113,.15);--accent-glow:rgba(46,203,113,.35);
+--gold:#c9a84c;--gold-dim:rgba(201,168,76,.15);
+--text:#e8edf3;--text-muted:#8899aa;--text-heading:#f4f7fa;
+--border:rgba(136,153,170,.12);--border-hover:rgba(46,203,113,.3);
+--font-heading:'Playfair Display',Georgia,serif;
+--font-body:'DM Sans',system-ui,-apple-system,sans-serif;
+--max-w:1080px;--section-py:5rem;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+background:var(--bg);color:var(--text);font-family:var(--font-body);
+font-size:16px;line-height:1.7;overflow-x:hidden;
+-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+a{color:var(--accent);text-decoration:none;transition:color .2s}
+a:hover{color:#3de88a}
+img{max-width:100%;display:block}
+.container{max-width:var(--max-w);margin:0 auto;padding:0 1.25rem}
+.section-label{
+font-family:var(--font-body);font-size:.75rem;font-weight:600;
+text-transform:uppercase;letter-spacing:.15em;color:var(--gold);
+margin-bottom:.75rem;display:flex;align-items:center;gap:.5rem;
+}
+.section-label::before{
+content:'';display:inline-block;width:1.5rem;height:1px;
+background:var(--gold);
+}
+.section-title{
+font-family:var(--font-heading);font-size:clamp(1.75rem,4vw,2.5rem);
+font-weight:700;color:var(--text-heading);line-height:1.2;margin-bottom:1rem;
+}
+.section-desc{
+color:var(--text-muted);font-size:1.05rem;max-width:640px;line-height:1.7;
+}
+
+/* ── HERO ── */
+.hero{
+padding:7rem 0 5rem;position:relative;overflow:hidden;
+background:linear-gradient(175deg,#0d1e36 0%,var(--bg) 60%,#0b1a2e 100%);
+}
+.hero::before{
+content:'';position:absolute;top:-120px;right:-80px;
+width:500px;height:500px;border-radius:50%;
+background:radial-gradient(circle,rgba(46,203,113,.06) 0%,transparent 70%);
+pointer-events:none;
+}
+.hero::after{
+content:'';position:absolute;bottom:-60px;left:-40px;
+width:350px;height:350px;border-radius:50%;
+background:radial-gradient(circle,rgba(201,168,76,.04) 0%,transparent 70%);
+pointer-events:none;
+}
+.hero-inner{position:relative;z-index:1}
+.hero-oab{
+display:inline-flex;align-items:center;gap:.5rem;
+background:var(--gold-dim);border:1px solid rgba(201,168,76,.25);
+border-radius:100px;padding:.35rem 1rem;font-size:.8rem;
+font-weight:600;color:var(--gold);margin-bottom:1.5rem;
+letter-spacing:.04em;
+}
+.hero-oab svg{width:14px;height:14px;fill:var(--gold)}
+.hero h1{
+font-family:var(--font-heading);
+font-size:clamp(2.25rem,6vw,3.75rem);
+font-weight:800;color:var(--text-heading);line-height:1.1;
+margin-bottom:1.25rem;
+}
+.hero h1 em{
+font-style:normal;color:var(--accent);
+background:linear-gradient(135deg,var(--accent),#3de88a);
+-webkit-background-clip:text;-webkit-text-fill-color:transparent;
+background-clip:text;
+}
+.hero-subtitle{
+font-size:clamp(1rem,2.2vw,1.2rem);color:var(--text-muted);
+max-width:620px;line-height:1.7;margin-bottom:2rem;
+}
+.hero-actions{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;margin-bottom:1.5rem}
+.btn{
+display:inline-flex;align-items:center;gap:.5rem;
+font-family:var(--font-body);font-weight:600;font-size:1rem;
+border-radius:8px;padding:.875rem 1.75rem;cursor:pointer;
+border:none;transition:all .25s ease;text-decoration:none;
+}
+.btn-primary{
+background:var(--accent);color:#0a1628;
+box-shadow:0 4px 20px rgba(46,203,113,.25);
+}
+.btn-primary:hover{
+background:#3de88a;color:#0a1628;
+box-shadow:0 6px 28px rgba(46,203,113,.4);
+transform:translateY(-1px);
+}
+.btn-secondary{
+background:transparent;color:var(--text);
+border:1px solid var(--border);
+}
+.btn-secondary:hover{border-color:var(--accent);color:var(--accent)}
+.btn svg{width:18px;height:18px;flex-shrink:0}
+.hero-location{
+font-size:.9rem;color:var(--text-muted);
+display:flex;align-items:center;gap:.4rem;
+}
+.hero-location svg{width:14px;height:14px;fill:var(--text-muted);flex-shrink:0}
+
+/* ── STATS ── */
+.stats{padding:3.5rem 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.stats-grid{
+display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;
+text-align:center;
+}
+.stat-item{padding:1rem 0}
+.stat-number{
+font-family:var(--font-heading);font-size:clamp(1.75rem,4vw,2.75rem);
+font-weight:700;color:var(--text-heading);line-height:1;
+margin-bottom:.35rem;
+}
+.stat-number .stat-suffix{font-size:.65em;color:var(--accent)}
+.stat-label{
+font-size:.85rem;color:var(--text-muted);font-weight:500;
+text-transform:uppercase;letter-spacing:.06em;
+}
+
+/* ── AREAS DE ATUACAO ── */
+.areas{padding:var(--section-py) 0}
+.areas-header{text-align:center;margin-bottom:3rem}
+.areas-header .section-label{justify-content:center}
+.areas-header .section-label::before{display:none}
+.areas-header .section-desc{margin:0 auto}
+.areas-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.25rem}
+.area-card{
+background:var(--bg-card);border:1px solid var(--border);
+border-radius:12px;padding:1.75rem;position:relative;
+overflow:hidden;transition:all .3s ease;cursor:pointer;
+text-decoration:none;display:block;
+}
+.area-card::before{
+content:'';position:absolute;inset:0;border-radius:12px;
+opacity:0;transition:opacity .3s ease;
+background:radial-gradient(ellipse at 50% 0%,var(--accent-glow),transparent 70%);
+pointer-events:none;
+}
+.area-card:hover{
+border-color:var(--border-hover);background:var(--bg-card-hover);
+transform:translateY(-2px);
+box-shadow:0 8px 32px rgba(46,203,113,.08);
+}
+.area-card:hover::before{opacity:1}
+.area-card.coming-soon{opacity:.6;cursor:default}
+.area-card.coming-soon:hover{
+transform:none;border-color:var(--border);
+background:var(--bg-card);box-shadow:none;
+}
+.area-card.coming-soon::before{display:none}
+.area-icon{
+width:44px;height:44px;border-radius:10px;
+background:var(--accent-dim);display:flex;
+align-items:center;justify-content:center;
+margin-bottom:1rem;transition:background .3s ease;
+}
+.area-card:hover .area-icon{background:rgba(46,203,113,.25)}
+.area-card.coming-soon:hover .area-icon{background:var(--accent-dim)}
+.area-icon svg{width:22px;height:22px;stroke:var(--accent);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.area-card-header{display:flex;align-items:center;gap:.75rem;margin-bottom:.75rem}
+.area-badge{
+font-size:.65rem;font-weight:700;text-transform:uppercase;
+letter-spacing:.1em;padding:.2rem .6rem;border-radius:100px;
+background:rgba(136,153,170,.12);color:var(--text-muted);
+}
+.area-title{
+font-family:var(--font-heading);font-size:1.2rem;font-weight:600;
+color:var(--text-heading);margin-bottom:.5rem;
+}
+.area-desc{font-size:.9rem;color:var(--text-muted);line-height:1.6}
+.area-arrow{
+position:absolute;top:1.75rem;right:1.75rem;
+width:20px;height:20px;opacity:.3;transition:all .3s ease;
+stroke:var(--accent);fill:none;stroke-width:2;
+}
+.area-card:hover .area-arrow{opacity:1;transform:translateX(3px)}
+.area-card.coming-soon .area-arrow{display:none}
+
+/* ── POR QUE ── */
+.why{padding:var(--section-py) 0;background:linear-gradient(180deg,transparent,rgba(15,31,53,.5),transparent)}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2.5rem}
+.why-card{
+background:var(--bg-card);border:1px solid var(--border);
+border-radius:12px;padding:2rem;position:relative;overflow:hidden;
+}
+.why-card::after{
+content:'';position:absolute;top:0;left:0;right:0;
+height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);
+opacity:.5;
+}
+.why-number{
+font-family:var(--font-heading);font-size:3rem;font-weight:800;
+color:rgba(201,168,76,.1);line-height:1;margin-bottom:.5rem;
+position:absolute;top:1rem;right:1.5rem;
+}
+.why-title{
+font-family:var(--font-heading);font-size:1.15rem;font-weight:600;
+color:var(--gold);margin-bottom:.75rem;
+}
+.why-text{font-size:.95rem;color:var(--text-muted);line-height:1.7}
+
+/* ── BAIRROS ── */
+.locations{padding:var(--section-py) 0}
+.locations-header{margin-bottom:2.5rem}
+.locations-content{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
+.location-group{
+background:var(--bg-card);border:1px solid var(--border);
+border-radius:12px;padding:2rem;
+}
+.location-group-title{
+font-family:var(--font-heading);font-size:1.15rem;font-weight:600;
+color:var(--text-heading);margin-bottom:1.25rem;
+display:flex;align-items:center;gap:.5rem;
+}
+.location-group-title svg{width:18px;height:18px;stroke:var(--accent);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.location-chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.location-chip{
+display:inline-flex;align-items:center;gap:.35rem;
+padding:.4rem .85rem;border-radius:100px;font-size:.82rem;
+background:rgba(46,203,113,.06);border:1px solid rgba(46,203,113,.12);
+color:var(--text);font-weight:500;transition:all .2s ease;
+}
+.location-chip:hover{
+background:rgba(46,203,113,.12);border-color:rgba(46,203,113,.25);
+}
+.location-chip svg{width:10px;height:10px;fill:var(--accent);flex-shrink:0}
+
+/* ── CREDENCIAIS ── */
+.credentials{
+padding:var(--section-py) 0;
+background:linear-gradient(180deg,transparent,rgba(15,31,53,.5),transparent);
+}
+.credentials-header{text-align:center;margin-bottom:2.5rem}
+.credentials-header .section-label{justify-content:center}
+.credentials-header .section-label::before{display:none}
+.cred-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
+.cred-item{
+background:var(--bg-card);border:1px solid var(--border);
+border-radius:12px;padding:1.75rem 1.5rem;text-align:center;
+transition:border-color .2s ease;
+}
+.cred-item:hover{border-color:var(--gold-dim)}
+.cred-icon{
+width:48px;height:48px;border-radius:50%;margin:0 auto .75rem;
+background:var(--gold-dim);display:flex;align-items:center;justify-content:center;
+}
+.cred-icon svg{width:22px;height:22px;stroke:var(--gold);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.cred-value{
+font-family:var(--font-heading);font-size:1.1rem;font-weight:700;
+color:var(--gold);margin-bottom:.25rem;
+}
+.cred-label{font-size:.82rem;color:var(--text-muted);line-height:1.4}
+
+/* ── FAQ ── */
+.faq{padding:var(--section-py) 0}
+.faq-header{text-align:center;margin-bottom:2.5rem}
+.faq-header .section-label{justify-content:center}
+.faq-header .section-label::before{display:none}
+.faq-list{max-width:780px;margin:0 auto}
+.faq-item{
+border:1px solid var(--border);border-radius:10px;
+margin-bottom:.75rem;overflow:hidden;background:var(--bg-card);
+transition:border-color .2s ease;
+}
+.faq-item.active{border-color:rgba(46,203,113,.2)}
+.faq-question{
+display:flex;align-items:center;justify-content:space-between;
+padding:1.25rem 1.5rem;cursor:pointer;gap:1rem;
+font-size:1rem;font-weight:600;color:var(--text-heading);
+background:none;border:none;width:100%;text-align:left;
+font-family:var(--font-body);transition:color .2s ease;
+}
+.faq-question:hover{color:var(--accent)}
+.faq-chevron{
+width:20px;height:20px;flex-shrink:0;
+transition:transform .3s ease;stroke:var(--text-muted);
+fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;
+}
+.faq-item.active .faq-chevron{transform:rotate(180deg);stroke:var(--accent)}
+.faq-answer{
+max-height:0;overflow:hidden;transition:max-height .35s ease;
+}
+.faq-answer-inner{
+padding:0 1.5rem 1.25rem;font-size:.95rem;color:var(--text-muted);
+line-height:1.7;
+}
+
+/* ── FOOTER CTA ── */
+.footer-cta{
+padding:var(--section-py) 0;
+background:linear-gradient(180deg,var(--bg),#0d1e36);
+text-align:center;
+}
+.footer-cta-title{
+font-family:var(--font-heading);
+font-size:clamp(1.5rem,3.5vw,2.25rem);font-weight:700;
+color:var(--text-heading);margin-bottom:.75rem;
+}
+.footer-cta-desc{
+font-size:1.05rem;color:var(--text-muted);
+margin-bottom:2rem;max-width:520px;margin-left:auto;margin-right:auto;
+}
+.footer-cta .btn-primary{
+font-size:1.1rem;padding:1rem 2.25rem;margin-bottom:1.5rem;
+}
+.footer-info{
+display:flex;flex-wrap:wrap;justify-content:center;gap:1.5rem;
+color:var(--text-muted);font-size:.85rem;margin-top:2rem;
+padding-top:2rem;border-top:1px solid var(--border);
+}
+.footer-info-item{display:flex;align-items:center;gap:.4rem}
+.footer-info-item svg{width:14px;height:14px;stroke:var(--text-muted);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+
+/* ── FOOTER ── */
+.footer{
+padding:2rem 0;border-top:1px solid var(--border);
+text-align:center;
+}
+.footer-social{
+display:flex;justify-content:center;gap:1.25rem;margin-bottom:1rem;
+}
+.footer-social a{
+display:flex;align-items:center;justify-content:center;
+width:36px;height:36px;border-radius:8px;
+border:1px solid var(--border);transition:all .2s ease;
+}
+.footer-social a:hover{border-color:var(--accent);background:var(--accent-dim)}
+.footer-social a svg{width:16px;height:16px;fill:var(--text-muted);transition:fill .2s ease}
+.footer-social a:hover svg{fill:var(--accent)}
+.footer-copy{font-size:.8rem;color:var(--text-muted)}
+
+/* ── FLOATING WHATSAPP ── */
+.wa-float{
+position:fixed;bottom:1.5rem;right:1.5rem;z-index:999;
+width:56px;height:56px;border-radius:50%;
+background:#25D366;display:flex;align-items:center;justify-content:center;
+box-shadow:0 4px 16px rgba(37,211,102,.35);
+transition:all .25s ease;cursor:pointer;text-decoration:none;
+}
+.wa-float:hover{transform:scale(1.08);box-shadow:0 6px 24px rgba(37,211,102,.5)}
+.wa-float svg{width:28px;height:28px;fill:#fff}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+.why-grid{grid-template-columns:1fr 1fr;gap:1.5rem}
+.why-grid .why-card:last-child{grid-column:1/-1}
+.cred-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:768px){
+:root{--section-py:3.5rem}
+.hero{padding:5rem 0 3.5rem}
+.stats-grid{grid-template-columns:repeat(2,1fr);gap:1rem}
+.areas-grid{grid-template-columns:1fr}
+.why-grid{grid-template-columns:1fr}
+.why-grid .why-card:last-child{grid-column:auto}
+.locations-content{grid-template-columns:1fr}
+.cred-grid{grid-template-columns:repeat(2,1fr)}
+.footer-info{flex-direction:column;align-items:center;gap:.75rem}
+}
+@media(max-width:480px){
+.hero{padding:4rem 0 2.5rem}
+.hero h1{font-size:2rem}
+.hero-actions{flex-direction:column;align-items:stretch}
+.btn{justify-content:center;padding:.8rem 1.25rem;font-size:.95rem}
+.stats-grid{grid-template-columns:1fr 1fr}
+.stat-number{font-size:1.75rem}
+.cred-grid{grid-template-columns:1fr 1fr}
+.faq-question{padding:1rem 1.25rem;font-size:.95rem}
+.faq-answer-inner{padding:0 1.25rem 1rem}
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+.fade-up{opacity:0;transform:translateY(24px)}
+.fade-up.visible{animation:fadeUp .6s ease forwards}
+.fade-up.d1{animation-delay:.1s}
+.fade-up.d2{animation-delay:.2s}
+.fade-up.d3{animation-delay:.3s}
+.fade-up.d4{animation-delay:.35s}
+.fade-up.d5{animation-delay:.4s}
+.fade-up.d6{animation-delay:.45s}
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+<div class="container hero-inner">
+<div class="hero-oab">
+<svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+OAB/PR 101.570
+</div>
+<h1>Advogado em <em>Foz do Igua&ccedil;u</em></h1>
+<p class="hero-subtitle">
+Luan Barbosa Advocacia &mdash; assessoria jur&iacute;dica completa para pessoas f&iacute;sicas e empresas na regi&atilde;o da tr&iacute;plice fronteira. OAB/PR 101.570.
+</p>
+<div class="hero-actions">
+<a href="https://wa.me/5545988428644?text=Ol%C3%A1%20Luan%2C%20gostaria%20de%20agendar%20uma%20consulta" class="btn btn-primary">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+Agendar Consulta Gratuita
+</a>
+<a href="#areas" class="btn btn-secondary">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+Ver &Aacute;reas de Atua&ccedil;&atilde;o
+</a>
+</div>
+<p class="hero-location">
+<svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+Av. Pedro Basso, Foz do Igua&ccedil;u/PR &nbsp;|&nbsp; Atendimento presencial e online
+</p>
+</div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="stats">
+<div class="container">
+<div class="stats-grid">
+<div class="stat-item fade-up">
+<div class="stat-number"><span data-count="6000">0</span><span class="stat-suffix">+</span></div>
+<div class="stat-label">Processos ativos</div>
+</div>
+<div class="stat-item fade-up d1">
+<div class="stat-number"><span data-count="12">0</span></div>
+<div class="stat-label">OABs em todo o Brasil</div>
+</div>
+<div class="stat-item fade-up d2">
+<div class="stat-number"><span data-count="15">0</span></div>
+<div class="stat-label">Profissionais dedicados</div>
+</div>
+<div class="stat-item fade-up d3">
+<div class="stat-number"><span data-count="8">0</span><span class="stat-suffix">+</span></div>
+<div class="stat-label">Anos de experi&ecirc;ncia</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ AREAS DE ATUACAO ============ -->
+<section class="areas" id="areas">
+<div class="container">
+<div class="areas-header">
+<div class="section-label">&Aacute;reas de Atua&ccedil;&atilde;o</div>
+<h2 class="section-title">Expertise jur&iacute;dica para cada necessidade</h2>
+<p class="section-desc">Atuamos nas principais &aacute;reas do direito com equipe especializada e tecnologia pr&oacute;pria para acompanhar cada caso.</p>
+</div>
+<div class="areas-grid">
+
+<!-- Card 1: Previdenciario -->
+<a href="/advogado-previdenciario-foz-do-iguacu/" class="area-card fade-up">
+<svg class="area-arrow" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+<div class="area-icon">
+<svg viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16"/><path d="M3 21h18"/><path d="M9 7h6"/><path d="M9 11h6"/><path d="M9 15h4"/></svg>
+</div>
+<div class="area-title">Direito Previdenci&aacute;rio</div>
+<p class="area-desc">Aposentadoria, BPC/LOAS, aux&iacute;lio-doen&ccedil;a, pens&atilde;o por morte, revis&atilde;o de benef&iacute;cios INSS</p>
+</a>
+
+<!-- Card 2: Consumidor -->
+<a href="/advogado-direito-consumidor-foz-do-iguacu/" class="area-card fade-up d1">
+<svg class="area-arrow" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+<div class="area-icon">
+<svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+</div>
+<div class="area-title">Direito do Consumidor</div>
+<p class="area-desc">Negativa&ccedil;&atilde;o indevida, cobran&ccedil;a abusiva, produto defeituoso, problemas com banco e operadoras</p>
+</a>
+
+<!-- Card 3: Civil -->
+<a href="#" class="area-card coming-soon fade-up d2" onclick="return false">
+<div class="area-icon">
+<svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+</div>
+<div class="area-card-header">
+<div class="area-title" style="margin-bottom:0">Direito Civil</div>
+<span class="area-badge">Em breve</span>
+</div>
+<p class="area-desc">Contratos, cobran&ccedil;as, responsabilidade civil, indeniza&ccedil;&otilde;es, usucapi&atilde;o</p>
+</a>
+
+<!-- Card 4: Familia -->
+<a href="#" class="area-card coming-soon fade-up d3" onclick="return false">
+<div class="area-icon">
+<svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+</div>
+<div class="area-card-header">
+<div class="area-title" style="margin-bottom:0">Direito de Fam&iacute;lia</div>
+<span class="area-badge">Em breve</span>
+</div>
+<p class="area-desc">Div&oacute;rcio, pens&atilde;o aliment&iacute;cia, guarda de filhos, invent&aacute;rio e partilha</p>
+</a>
+
+<!-- Card 5: Trabalhista -->
+<a href="#" class="area-card coming-soon fade-up d4" onclick="return false">
+<div class="area-icon">
+<svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+</div>
+<div class="area-card-header">
+<div class="area-title" style="margin-bottom:0">Direito Trabalhista</div>
+<span class="area-badge">Em breve</span>
+</div>
+<p class="area-desc">Rescis&atilde;o indevida, horas extras, ass&eacute;dio moral, acidente de trabalho</p>
+</a>
+
+<!-- Card 6: Empresarial -->
+<a href="#" class="area-card coming-soon fade-up d5" onclick="return false">
+<div class="area-icon">
+<svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+</div>
+<div class="area-card-header">
+<div class="area-title" style="margin-bottom:0">Direito Empresarial</div>
+<span class="area-badge">Em breve</span>
+</div>
+<p class="area-desc">Abertura de empresa, contratos comerciais, recupera&ccedil;&atilde;o judicial, societ&aacute;rio</p>
+</a>
+
+</div>
+</div>
+</section>
+
+<!-- ============ POR QUE ============ -->
+<section class="why">
+<div class="container">
+<div class="section-label">Diferenciais</div>
+<h2 class="section-title">Por que o Luan Barbosa?</h2>
+<div class="why-grid">
+<div class="why-card fade-up">
+<span class="why-number">01</span>
+<h3 class="why-title">Cobertura Nacional</h3>
+<p class="why-text">Com inscri&ccedil;&atilde;o em 12 seccionais da OAB (PR, SP, RJ, MG, GO, SC, RS, PE, MS, DF, PA, BA), posso atuar em qualquer vara do Brasil sem necessidade de correspondente jur&iacute;dico. Seu processo recebe aten&ccedil;&atilde;o direta, onde quer que tramite.</p>
+</div>
+<div class="why-card fade-up d1">
+<span class="why-number">02</span>
+<h3 class="why-title">Equipe Estruturada</h3>
+<p class="why-text">N&atilde;o sou um advogado sozinho. Tenho uma equipe de 15 profissionais dedicados ao acompanhamento processual, com tecnologia pr&oacute;pria para monitorar prazos e andamentos 24/7. Nenhum prazo &eacute; perdido.</p>
+</div>
+<div class="why-card fade-up d2">
+<span class="why-number">03</span>
+<h3 class="why-title">Comunica&ccedil;&atilde;o Direta</h3>
+<p class="why-text">Voc&ecirc; fala comigo ou com minha equipe em tempo real pelo WhatsApp. Sem estagi&aacute;rios no meio, sem secret&aacute;rias barrando liga&ccedil;&atilde;o. Transpar&ecirc;ncia total em cada etapa do seu processo.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ BAIRROS ============ -->
+<section class="locations">
+<div class="container">
+<div class="locations-header">
+<div class="section-label">Abrang&ecirc;ncia</div>
+<h2 class="section-title">Bairros e cidades que atendemos</h2>
+<p class="section-desc">Atendimento presencial e online para toda a regi&atilde;o da tr&iacute;plice fronteira.</p>
+</div>
+<div class="locations-content">
+<div class="location-group fade-up">
+<h3 class="location-group-title">
+<svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+Foz do Igua&ccedil;u
+</h3>
+<div class="location-chips">
+<span class="location-chip"><svg viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"/></svg>Centro</span>
+<span class="location-chip"><svg viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"/></svg>Vila A</span>
+<span class="location-chip"><svg viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"/></svg>Porto Meira</span>
+<span class="location-chip"><svg viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"/></svg>Jardim Am&eacute;rica</span>
+<span class="location-chip"><svg viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"/></svg>Vila C</span>
+<span class="location-chip"><svg viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"/></svg>Tr&ecirc;s Lagoas</span>
+<span class="location-chip"><svg viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"/></svg>Morumbi</span>
+<span class="location-chip"><svg viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"/></svg>Campos do Igua&ccedil;u</span>
+<span class="location-chip"><svg viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"/></svg>Cidade Nova</span>
+</div>
+</div>
+<div class="location-group fade-up d1">
+<h3 class="location-group-title">
+<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+Regi&atilde;o
+</h3>
+<div class="location-chips">
+<span class="location-chip"><svg viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"/></svg>Santa Terezinha de Itaipu</span>
+<span class="location-chip"><svg viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"/></svg>S&atilde;o Miguel do Igua&ccedil;u</span>
+<span class="location-chip"><svg viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"/></svg>Medianeira</span>
+<span class="location-chip"><svg viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"/></svg>Mateland&icirc;a</span>
+<span class="location-chip"><svg viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"/></svg>C&eacute;u Azul</span>
+<span class="location-chip"><svg viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"/></svg>Serran&oacute;polis do Igua&ccedil;u</span>
+<span class="location-chip"><svg viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"/></svg>Itaipul&acirc;ndia</span>
+<span class="location-chip"><svg viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"/></svg>Missal</span>
+<span class="location-chip"><svg viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"/></svg>Ramil&acirc;ndia</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ CREDENCIAIS ============ -->
+<section class="credentials">
+<div class="container">
+<div class="credentials-header">
+<div class="section-label">Credenciais</div>
+<h2 class="section-title">Reconhecimento e experi&ecirc;ncia</h2>
+</div>
+<div class="cred-grid">
+<div class="cred-item fade-up">
+<div class="cred-icon">
+<svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+</div>
+<div class="cred-value">OAB/PR 101.570</div>
+<div class="cred-label">Inscri&ccedil;&atilde;o principal</div>
+</div>
+<div class="cred-item fade-up d1">
+<div class="cred-icon">
+<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+</div>
+<div class="cred-value">12 Estados</div>
+<div class="cred-label">Inscri&ccedil;&otilde;es estaduais ativas</div>
+</div>
+<div class="cred-item fade-up d2">
+<div class="cred-icon">
+<svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+</div>
+<div class="cred-value">Resolvoo &amp; GaranteDireito</div>
+<div class="cred-label">Fundador de 2 marcas jur&iacute;dicas</div>
+</div>
+<div class="cred-item fade-up d3">
+<div class="cred-icon">
+<svg viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16"/><path d="M3 21h18"/><path d="M9 7h6"/><path d="M9 11h6"/></svg>
+</div>
+<div class="cred-value">6.000+ Processos</div>
+<div class="cred-label">Carteira ativa de a&ccedil;&otilde;es</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq">
+<div class="container">
+<div class="faq-header">
+<div class="section-label">Perguntas Frequentes</div>
+<h2 class="section-title">Tire suas d&uacute;vidas</h2>
+</div>
+<div class="faq-list">
+
+<div class="faq-item">
+<button class="faq-question" aria-expanded="false">
+Qual a &aacute;rea de atua&ccedil;&atilde;o do escrit&oacute;rio Luan Barbosa?
+<svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+</button>
+<div class="faq-answer"><div class="faq-answer-inner">
+Atuamos em direito previdenci&aacute;rio, consumidor, civil, fam&iacute;lia, trabalhista e empresarial. Nossas especialidades principais s&atilde;o direito previdenci&aacute;rio (INSS, aposentadoria, BPC) e direito do consumidor.
+</div></div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question" aria-expanded="false">
+Onde fica o escrit&oacute;rio em Foz do Igua&ccedil;u?
+<svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+</button>
+<div class="faq-answer"><div class="faq-answer-inner">
+Av. Pedro Basso, Foz do Igua&ccedil;u/PR. Atendemos com hor&aacute;rio marcado de segunda a sexta, das 9h &agrave;s 18h. Tamb&eacute;m fazemos atendimento por videochamada.
+</div></div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question" aria-expanded="false">
+A primeira consulta &eacute; paga?
+<svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+</button>
+<div class="faq-answer"><div class="faq-answer-inner">
+N&atilde;o. A an&aacute;lise inicial do seu caso &eacute; sempre gratuita. Envie seus documentos pelo WhatsApp e em at&eacute; 24h voc&ecirc; recebe um parecer preliminar.
+</div></div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question" aria-expanded="false">
+Voc&ecirc;s atendem online?
+<svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+</button>
+<div class="faq-answer"><div class="faq-answer-inner">
+Sim. Grande parte dos nossos clientes &eacute; atendida 100% por WhatsApp e videochamada. Processos s&atilde;o acompanhados digitalmente com atualiza&ccedil;&otilde;es em tempo real.
+</div></div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question" aria-expanded="false">
+Como s&atilde;o os honor&aacute;rios?
+<svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+</button>
+<div class="faq-answer"><div class="faq-answer-inner">
+Depende do tipo de a&ccedil;&atilde;o. Em muitos casos previdenci&aacute;rios e consumeristas, trabalhamos com honor&aacute;rios de &ecirc;xito (voc&ecirc; s&oacute; paga se ganhar). Para consultorias e a&ccedil;&otilde;es c&iacute;veis, praticamos a Tabela OAB-PR.
+</div></div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question" aria-expanded="false">
+Atendem empresas tamb&eacute;m?
+<svg class="faq-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+</button>
+<div class="faq-answer"><div class="faq-answer-inner">
+Sim. Oferecemos assessoria jur&iacute;dica empresarial para abertura, contratos, recupera&ccedil;&atilde;o judicial e quest&otilde;es societ&aacute;rias. Temos experi&ecirc;ncia com empresas da tr&iacute;plice fronteira.
+</div></div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- ============ FOOTER CTA ============ -->
+<section class="footer-cta">
+<div class="container">
+<h2 class="footer-cta-title">Precisa de um advogado em Foz do Igua&ccedil;u?</h2>
+<p class="footer-cta-desc">Entre em contato agora &mdash; primeira consulta gratuita</p>
+<a href="https://wa.me/5545988428644?text=Ol%C3%A1%20Luan%2C%20gostaria%20de%20agendar%20uma%20consulta" class="btn btn-primary">
+<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 0 0 .611.611l4.458-1.495A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.3 0-4.438-.7-6.217-1.9l-.435-.29-3.06 1.026 1.026-3.06-.29-.435A9.96 9.96 0 0 1 2 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+WhatsApp: (45) 98842-8644
+</a>
+<div class="footer-info">
+<span class="footer-info-item">
+<svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+Av. Pedro Basso, Foz do Igua&ccedil;u/PR
+</span>
+<span class="footer-info-item">
+<svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+OAB/PR 101.570
+</span>
+<span class="footer-info-item">
+<svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+Seg-Sex 9h &ndash; 18h
+</span>
+</div>
+</div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+<div class="container">
+<div class="footer-social">
+<a href="https://instagram.com/luanbarbosa.adv" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+<svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C16.67.014 16.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+</a>
+<a href="https://linkedin.com/in/barbosaluan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+<svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+</a>
+<a href="https://tiktok.com/@luanbarbosa.adv" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+<svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+</a>
+</div>
+<p class="footer-copy">&copy; 2026 Luan Barbosa Advocacia. Todos os direitos reservados. OAB/PR 101.570.</p>
+</div>
+</footer>
+
+<!-- ============ FLOATING WHATSAPP ============ -->
+<a href="https://wa.me/5545988428644?text=Ol%C3%A1%20Luan%2C%20gostaria%20de%20agendar%20uma%20consulta" class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+<svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 0 0 .611.611l4.458-1.495A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.3 0-4.438-.7-6.217-1.9l-.435-.29-3.06 1.026 1.026-3.06-.29-.435A9.96 9.96 0 0 1 2 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+</a>
+
+<script>
+/* ── Counter Animation ── */
+function animateCounters(){
+document.querySelectorAll('[data-count]').forEach(function(el){
+if(el.dataset.animated) return;
+var target=parseInt(el.dataset.count,10);
+var duration=1800;
+var start=null;
+el.dataset.animated='1';
+function step(ts){
+if(!start) start=ts;
+var progress=Math.min((ts-start)/duration,1);
+var eased=1-Math.pow(1-progress,3);
+el.textContent=Math.floor(eased*target).toLocaleString('pt-BR');
+if(progress<1) requestAnimationFrame(step);
+else el.textContent=target.toLocaleString('pt-BR');
+}
+requestAnimationFrame(step);
+});
+}
+
+/* ── Intersection Observer for animations ── */
+var observer=new IntersectionObserver(function(entries){
+entries.forEach(function(entry){
+if(entry.isIntersecting){
+entry.target.classList.add('visible');
+if(entry.target.closest('.stats')){
+animateCounters();
+}
+}
+});
+},{threshold:0.15,rootMargin:'0px 0px -40px 0px'});
+
+document.querySelectorAll('.fade-up, .stats').forEach(function(el){
+observer.observe(el);
+});
+
+/* ── FAQ Accordion ── */
+document.querySelectorAll('.faq-question').forEach(function(btn){
+btn.addEventListener('click',function(){
+var item=this.closest('.faq-item');
+var answer=item.querySelector('.faq-answer');
+var isActive=item.classList.contains('active');
+
+// close all
+document.querySelectorAll('.faq-item.active').forEach(function(openItem){
+openItem.classList.remove('active');
+openItem.querySelector('.faq-question').setAttribute('aria-expanded','false');
+openItem.querySelector('.faq-answer').style.maxHeight='0';
+});
+
+// toggle current
+if(!isActive){
+item.classList.add('active');
+this.setAttribute('aria-expanded','true');
+answer.style.maxHeight=answer.scrollHeight+'px';
+}
+});
+});
+
+/* ── Smooth scroll for anchor links ── */
+document.querySelectorAll('a[href^="#"]').forEach(function(anchor){
+anchor.addEventListener('click',function(e){
+var target=document.querySelector(this.getAttribute('href'));
+if(target){
+e.preventDefault();
+target.scrollIntoView({behavior:'smooth',block:'start'});
+}
+});
+});
+</script>
+</body>
+</html>
